@@ -1,8 +1,8 @@
 # Data Dictionary
 
-Two CSV logs with one shared schema. They are used for synthetic data (`data/synthetic/`), blank templates (`data/templates/`), and real de-identified data (`data/real/`, **git-ignored, never commit**).
+Two CSV logs with one shared schema. They are used for synthetic data (`data/synthetic/`), blank templates (`data/templates/`), and real coded data (`data/real/`, **git-ignored, never commit**).
 
-**No PHI in these files:** no names, DOB, addresses, phone numbers, or free-text clinical detail. `patient_id` is a study code (e.g., `P001`). The linking key stays at the clinic.
+**No direct identifiers in these files:** no names, DOB, addresses, phone numbers, or free-text clinical detail. `patient_id` is a study code (e.g., `P001`). The linking key stays at the clinic. Real logs are still **PHI** because they contain dates of service. See [08 §2](../docs/08-ethics-privacy.md) before any data leaves the clinic.
 
 ## `screening_log.csv` — one row per adult visit
 
@@ -10,8 +10,8 @@ Two CSV logs with one shared schema. They are used for synthetic data (`data/syn
 |---|---|---|---|
 | `visit_id` | text | unique, e.g. `V0001` | |
 | `patient_id` | text | e.g. `P001` | Study code |
-| `visit_date` | date | `YYYY-MM-DD` | Convert to `week` before data leaves the clinic |
-| `week` | int | 1..N | Project week (week 1 = first baseline week) |
+| `visit_date` | date | `YYYY-MM-DD` | HIPAA date element; see 08 §2 before sharing |
+| `week` | int | 1..N | Project week (week 1 = first baseline week); derived from dates, so still a date element |
 | `phase` | text | `baseline`, `pdsa1`, `pdsa2`, `pdsa3`, `sustain` | |
 | `excluded` | Y/N | `Y`, `N` | Y = medical/unable; removed from denominators |
 | `exclusion_reason` | text | blank, `medical_unstable`, `unable_to_participate` | Required if `excluded = Y` |
@@ -28,7 +28,7 @@ Two CSV logs with one shared schema. They are used for synthetic data (`data/syn
 | `safety_pos` | text | `Y`, `N`, `deferred`, blank | Q7–10 sum ≥ 11 |
 | `literacy_pos` | text | `Y`, `N`, blank | Q11 (clinical response, not a referral) |
 | `id_docs_pos` | text | `Y`, `N`, blank | Q12 |
-| `notes` | text | short, **no PHI** | e.g. `baseline: food asked only` |
+| `notes` | text | short, **no identifiers or clinical detail** | e.g. `baseline: food asked only` |
 
 Domain fields are filled when `screen_status` is `complete` or `partial`. During baseline, `partial` records which domains happened to be asked.
 

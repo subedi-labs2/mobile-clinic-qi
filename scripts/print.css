@@ -14,3 +14,5 @@ blockquote { border-left: 4px solid #c9d6e3; margin: 0.5em 0; padding: 0.2em 0.8
 img { max-width: 100%; }
 header#title-block-header { display: none; }
 nav#TOC { page-break-after: always; }
+ul.task-list { list-style: none; padding-left: 1.6em; }
+ul.task-list li input[type="checkbox"] { display: inline-block; appearance: none; width: 0.85em; height: 0.85em; border: 1px solid #444; margin: 0 0.45em 0 -1.35em; vertical-align: -0.1em; }

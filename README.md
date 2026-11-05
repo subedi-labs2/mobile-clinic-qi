@@ -23,12 +23,13 @@ An academic quality improvement (QI) project for a mobile clinic in **Chantilly,
 | 07 | [Measurement plan](docs/07-measurement-plan.md) | Measure definitions, run-chart rules, targets |
 | 08 | [Ethics, privacy & QI determination](docs/08-ethics-privacy.md) | IRB/QI determination, HIPAA, safety reporting |
 | 09 | [Phase 2 decision guide](docs/09-phase2-decision-guide.md) | Open questions and build options |
+| 10 | [Real data plan](docs/10-real-data-plan.md) | Getting real data: approvals, public sources, contacts, outreach templates |
 | — | [Data dictionary](data/data-dictionary.md) | Field definitions for the CSV logs |
 | — | [Templates](templates/) | Printable screening form, PDSA worksheet, logs |
 
 ## Data analysis
 
-The data templates and the synthetic dataset use the same schema, so the analysis runs unchanged on real de-identified data later.
+The data templates and the synthetic dataset use the same schema, so the analysis runs unchanged on real data later.
 
 ```bash
 pip install -r analysis/requirements.txt
@@ -39,6 +40,12 @@ python analysis/analyze.py --data-dir data/synthetic --out-dir output
 Outputs: run charts in `output/figures/` and a measure summary in `output/summary.md`.
 
 > ⚠️ Everything in `data/synthetic/` is **simulated**. It shows how the analysis works and must not be cited as findings.
+
+**Real data** goes in `data/real/`, which is git-ignored, and only on clinic-approved storage. See [10](docs/10-real-data-plan.md) first. Keep `data/synthetic/` and `output/` as the demo.
+
+```bash
+python analysis/analyze.py --data-dir data/real --out-dir data/real/output --strict
+```
 
 ## Word / PDF versions
 
