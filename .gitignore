@@ -1,0 +1,12 @@
+# Real patient data must never be committed
+data/real/
+*.xlsx
+*.sav
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Build intermediates
+dist/*.html
