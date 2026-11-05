@@ -1,0 +1,66 @@
+referral_id,visit_id,patient_id,referral_date,domain,accepted,referral_type,resource,followup_date,followup_status
+R0001,V0010,P030,2026-01-06,transportation,Y,information_only,Cardinal Care NEMT,,pending
+R0002,V0016,P012,2026-01-08,transportation,Y,warm_handoff,TOPS/TRIP,,pending
+R0003,V0022,P003,2026-01-13,transportation,N,information_only,Cardinal Care NEMT,,declined_followup
+R0004,V0025,P018,2026-01-13,id_docs,Y,information_only,Vital Records,,pending
+R0005,V0026,P020,2026-01-13,food,Y,warm_handoff,WFCM,,pending
+R0006,V0032,P015,2026-01-15,housing,Y,information_only,Hypothermia Prevention Program,,pending
+R0007,V0033,P021,2026-01-15,housing,Y,direct_referral,Hypothermia Prevention Program,,pending
+R0008,V0046,P022,2026-01-22,housing,Y,direct_referral,OPEH/shelter intake,2026-02-07,connected
+R0009,V0049,P003,2026-01-27,food,Y,information_only,WFCM,,pending
+R0010,V0065,P021,2026-02-03,housing,Y,information_only,Hypothermia Prevention Program,,pending
+R0011,V0065,P021,2026-02-03,safety,N,information_only,DSV 24-Hour Hotline,,declined_followup
+R0012,V0068,P001,2026-02-05,housing,Y,warm_handoff,CSP,2026-03-02,connected
+R0013,V0069,P004,2026-02-05,housing,Y,warm_handoff,Hypothermia Prevention Program,,pending
+R0014,V0069,P004,2026-02-05,transportation,Y,information_only,TOPS/TRIP,,pending
+R0015,V0070,P007,2026-02-05,housing,Y,warm_handoff,CSP,,pending
+R0016,V0070,P007,2026-02-05,food,Y,information_only,DFS SNAP,2026-02-18,connected
+R0017,V0071,P008,2026-02-05,food,N,warm_handoff,WFCM,,declined_followup
+R0018,V0071,P008,2026-02-05,transportation,Y,warm_handoff,TOPS/TRIP,,pending
+R0019,V0072,P009,2026-02-05,housing,Y,warm_handoff,Hypothermia Prevention Program,,pending
+R0020,V0072,P009,2026-02-05,food,Y,direct_referral,DFS SNAP,2026-03-01,connected
+R0021,V0075,P029,2026-02-05,housing,N,warm_handoff,Embry Rucker Shelter,,declined_followup
+R0022,V0075,P029,2026-02-05,transportation,N,direct_referral,Cardinal Care NEMT,,declined_followup
+R0023,V0077,P002,2026-02-10,food,N,direct_referral,DFS SNAP,,declined_followup
+R0024,V0077,P002,2026-02-10,transportation,Y,warm_handoff,Cardinal Care NEMT,,pending
+R0025,V0086,P012,2026-02-12,housing,Y,direct_referral,OPEH/shelter intake,,pending
+R0026,V0087,P013,2026-02-12,housing,Y,direct_referral,CSP,,pending
+R0027,V0087,P013,2026-02-12,food,Y,information_only,WFCM,2026-03-10,connected
+R0028,V0088,P014,2026-02-12,food,Y,warm_handoff,WFCM,,pending
+R0029,V0089,P015,2026-02-12,housing,Y,direct_referral,OPEH/shelter intake,,pending
+R0030,V0089,P015,2026-02-12,food,Y,warm_handoff,WFCM,2026-03-07,unable_to_reach
+R0031,V0089,P015,2026-02-12,transportation,Y,warm_handoff,Cardinal Care NEMT,,pending
+R0032,V0090,P016,2026-02-12,housing,Y,warm_handoff,OPEH/shelter intake,,pending
+R0033,V0090,P016,2026-02-12,transportation,Y,warm_handoff,Cardinal Care NEMT,,pending
+R0034,V0092,P027,2026-02-12,housing,N,warm_handoff,CSP,,declined_followup
+R0035,V0092,P027,2026-02-12,transportation,Y,direct_referral,TOPS/TRIP,2026-03-01,connected
+R0036,V0099,P022,2026-02-17,food,N,warm_handoff,DFS SNAP,,declined_followup
+R0037,V0100,P026,2026-02-17,housing,Y,warm_handoff,Embry Rucker Shelter,,pending
+R0038,V0101,P028,2026-02-17,food,N,information_only,WFCM,,declined_followup
+R0039,V0101,P028,2026-02-17,transportation,Y,information_only,TOPS/TRIP,,pending
+R0040,V0103,P030,2026-02-17,food,Y,direct_referral,DFS SNAP,,pending
+R0041,V0132,P025,2026-03-03,housing,Y,warm_handoff,CSP,,pending
+R0042,V0132,P025,2026-03-03,food,N,direct_referral,WFCM,,declined_followup
+R0043,V0138,P019,2026-03-05,housing,Y,direct_referral,CSP,,pending
+R0044,V0138,P019,2026-03-05,transportation,Y,warm_handoff,Cardinal Care NEMT,,pending
+R0045,V0138,P019,2026-03-05,id_docs,Y,information_only,CSP,,pending
+R0046,V0144,P011,2026-03-10,housing,Y,warm_handoff,Hypothermia Prevention Program,2026-04-04,connected
+R0047,V0148,P024,2026-03-10,housing,Y,warm_handoff,OPEH/shelter intake,2026-04-02,not_connected
+R0048,V0148,P024,2026-03-10,food,Y,direct_referral,WFCM,2026-03-30,unable_to_reach
+R0049,V0148,P024,2026-03-10,id_docs,Y,direct_referral,Vital Records,,pending
+R0050,V0162,P003,2026-03-19,housing,Y,warm_handoff,Hypothermia Prevention Program,,pending
+R0051,V0170,P003,2026-03-24,housing,N,direct_referral,CSP,,declined_followup
+R0052,V0170,P003,2026-03-24,food,Y,information_only,DFS SNAP,2026-04-04,connected
+R0053,V0170,P003,2026-03-24,id_docs,Y,information_only,Vital Records,,pending
+R0054,V0189,P017,2026-03-31,housing,Y,information_only,Embry Rucker Shelter,,pending
+R0055,V0189,P017,2026-03-31,food,Y,direct_referral,DFS SNAP,2026-04-22,connected
+R0056,V0193,P006,2026-04-02,utilities,Y,information_only,DFS Energy Assistance,2026-04-12,unable_to_reach
+R0057,V0210,P005,2026-04-09,housing,N,direct_referral,OPEH/shelter intake,,declined_followup
+R0058,V0210,P005,2026-04-09,food,Y,direct_referral,WFCM,,pending
+R0059,V0210,P005,2026-04-09,transportation,N,direct_referral,Cardinal Care NEMT,,declined_followup
+R0060,V0222,P018,2026-04-14,housing,Y,warm_handoff,CSP,,pending
+R0061,V0222,P018,2026-04-14,food,Y,warm_handoff,DFS SNAP,,pending
+R0062,V0222,P018,2026-04-14,transportation,Y,information_only,Cardinal Care NEMT,,pending
+R0063,V0222,P018,2026-04-14,safety,Y,warm_handoff,DSV 24-Hour Hotline,,pending
+R0064,V0242,P020,2026-04-23,housing,Y,direct_referral,Hypothermia Prevention Program,,pending
+R0065,V0242,P020,2026-04-23,food,Y,warm_handoff,WFCM,,pending
