@@ -102,6 +102,6 @@ Arrival --> Intake: screen due? (log / flag)
 | What | Where (paper-first) | Phase 2 |
 |---|---|---|
 | Completed form | Locked binder / scanned to chart | EHR flowsheet |
-| Screening log | `screening_log.csv` (de-identified study ID) | Export |
+| Screening log | `screening_log.csv` (coded with study ID) | Export |
 | Referral log | `referral_log.csv` | Closed-loop referral platform |
 | Study ID ↔ patient key | **Separate, locked**, held by clinic only | — |

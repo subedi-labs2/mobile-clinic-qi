@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Compute QI measures and run charts from the screening and referral logs.
 
-Works on synthetic data (data/synthetic) or real de-identified data in the same
+Works on synthetic data (data/synthetic) or real coded data in the same
 schema (see data/data-dictionary.md). Measure definitions: docs/07-measurement-plan.md.
 """
 from __future__ import annotations
